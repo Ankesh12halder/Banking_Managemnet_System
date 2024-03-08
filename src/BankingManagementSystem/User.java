@@ -1,11 +1,12 @@
 package BankingManagementSystem;
-
 import javax.xml.transform.Result;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Scanner;
+
+
 
 public class User {
     private Connection connection;
@@ -16,6 +17,10 @@ public class User {
         this.scanner = scanner;
     }
 
+    
+    
+    
+    
     public void register(){
         scanner.nextLine();
         System.out.print("Full Name: ");
@@ -45,6 +50,11 @@ public class User {
         }
     }
 
+    
+    
+    
+    
+    
     public String login(){
         scanner.nextLine();
         System.out.print("Email: ");
@@ -68,6 +78,11 @@ public class User {
         return null;
     }
 
+    
+    
+    
+    
+    
     public boolean user_exist(String email){
         String query = "SELECT * FROM user WHERE email = ?";
         try{
